@@ -16,5 +16,5 @@ let package = Package(
                        pkgConfig: "freetype2",
                        providers: [.brew(["freetype2"]),
                                    .apt(["libfreetype6-dev"])])
-    ],
+    ]
 )
