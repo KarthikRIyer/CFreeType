@@ -8,8 +8,8 @@ let package = Package(
     pkgConfig: "freetype2",
     providers: [.brew(["freetype2"]), .apt(["libfreetype6-dev"])],
     products: [
-        .library(name: "CFreeType", targets: ["CFreeType"]),
-    ],
+        .library(name: "CFreeType", targets: ["CFreeType"])
+    ]
     // targets: [
     //     .systemLibrary(name: "CFreeType",
     //                    path: "Sources/CFreeType",
