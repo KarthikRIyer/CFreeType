@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    // name: "CFreeType",
+    name: "CFreeType",
     // pkgConfig: "freetype2",
     // providers: [.brew(["freetype2"]), .apt(["libfreetype6-dev"])],
     // products: [
@@ -14,7 +14,6 @@ let package = Package(
         .systemLibrary(name: "CFreeType",
                        path: "Sources/CFreeType",
                        pkgConfig: "freetype2",
-                       providers: [.brew(["freetype2"]),
-                                   .apt(["libfreetype6-dev"])])
+                       providers: [.brew(["freetype2"]), .apt(["libfreetype6-dev"])])
     ]
 )
